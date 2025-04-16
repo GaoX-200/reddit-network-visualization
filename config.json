@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "Xing Gao"
+  },
+  "text": {
+    "more": "This visualization presents the results of social network analysis based on user interaction data on the Reddit platform. \nData and anonymization processing \n-Raw data: Contains 1971 user nodes and 3123 interactive edges, covering posting and commenting records from May 2020 to September 2024. \n-Node label: \n-The user ID has been replaced with a random number (such as\u0027 User_anonBF \u0027→\u0027 714 \u0027) to ensure privacy protection. \n-The name of the subreddit should be kept in its original form (such as\u0027 politics\u0027). \n-Edge weight: \n-The weight of user interaction is the number of comments, ranging from 1 to 50. \n-The weight of a user\u0027s post on subreddit is the number of likes received, ranging from 1 to 60600. \nKey analysis results \n1. Community structure: \n-Detected 8 major communities (Q\u003d0.554), including: \n-Community 2 (yellow): Centered around the core discussion group of \u0027conservative\u0027, there is intense interaction among users. \n-Community 1 (blue): Cross subreddit users who are interested in legal reform (such as\u0027 r/law \u0027and\u0027 r/politics\u0027). \n2. Core nodes: \n-The user\u0027s flameguide has the highest PageRank (0.09716) and Betweenness Centrality (3510.5), connecting Community 1 and Community 48, promoting cross topic dissemination. \n-PoliticsModeratorBot: highest degree (348), but low PageRank, indicating concentrated content but limited influence. \nInteractive usage instructions \n-Search function: Enter a numeric ID (such as\u0027 421 \u0027) or a subreddit name (such as\u0027 news\u0027) to quickly locate. \n-Filtering operation: \n-Click on the dropdown menu in the upper right corner and hide/display nodes by community color. \n-Check \u0027Show only subreddit\u0027 to filter user nodes. \n-Hover prompt: \n-Hovering over a node displays: numerical ID, community affiliation, PageRank value. \n-Hover over the mouse to display: interaction type (comment/post) and weight.",
+    "intro": "A visualization of the information diffusion of Black Lives Matter (BLM) related discourses sparked by the George Floyd incident.",
+    "title": "A visualization of the information diffusion of Black Lives Matter"
+  },
+  "legend": {
+    "edgeLabel": "Interaction_type",
+    "colorLabel": "Modularity Class",
+    "nodeLabel": "User and Subreddit"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
